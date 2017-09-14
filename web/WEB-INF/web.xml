@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    
+    
+    <servlet>
+        <servlet-name>RegisterCustomerServlet</servlet-name>
+        <servlet-class>Controller.RegisterCustomerServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>LogoutCustomerServlet</servlet-name>
+        <servlet-class>Controller.LogoutCustomerServlet</servlet-class>
+    </servlet>
+    
+     <servlet>
+        <servlet-name>ResetPasswordServlet</servlet-name>
+        <servlet-class>Controller.ResetPasswordServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResetPasswordOtpServlet</servlet-name>
+        <servlet-class>Controller.ResetPasswordOtpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginCustomerServlet</servlet-name>
+        <servlet-class>Controller.LoginCustomerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerifyCustomerRegistrationServlet</servlet-name>
+        <servlet-class>Controller.VerifyCustomerRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginCustomerServlet</servlet-name>
+        <url-pattern>/LoginCustomerServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutCustomerServlet</servlet-name>
+        <url-pattern>/LogoutCustomerServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResetPasswordServlet</servlet-name>
+        <url-pattern>/ResetPasswordServlet.do</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>ResetPasswordOtpServlet</servlet-name>
+        <url-pattern>/ResetPasswordOtpServlet.do</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>RegisterCustomerServlet</servlet-name>
+        <url-pattern>/RegisterCustomerServlet.do</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>VerifyCustomerRegistrationServlet</servlet-name>
+        <url-pattern>/VerifyCustomerRegistrationServlet.do</url-pattern>
+    </servlet-mapping>
+   
+   
+    <session-config>
+        <session-timeout>
+            60
+        </session-timeout>
+    </session-config>
+</web-app>
